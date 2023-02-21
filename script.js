@@ -3,7 +3,6 @@ const mensaje = document.querySelector(".cuadro_salida");
 const copia = document.querySelector(".boton-copiar");
 copia.style.display = "none";
 
-
 function validarTexto(){
     let textoEscrito = document.querySelector(".input_padron").value;
     let validador = textoEscrito.match(/^[a-z," "]*$/);
@@ -14,7 +13,6 @@ function validarTexto(){
         return true;
     }
 }
-
 
 function botonEncriptar(){
     if(!validarTexto()) {
@@ -35,7 +33,6 @@ function botonEncriptar(){
 // La letra "u" es convertida en "ufat"`
 // El espacio " " es convertido en "ibai"
 
-
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"], [" ", "ibai"]];
     stringEncriptada = stringEncriptada.toLowerCase()
@@ -50,8 +47,6 @@ function encriptar(stringEncriptada){
     return stringEncriptada
 }
 
-
-
 function botonDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value = textoEncriptado;
@@ -59,7 +54,6 @@ function botonDesencriptar(){
     textArea.value = "";
     
 }
-
 
 function desencriptar(stringDesencriptada){
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
@@ -74,7 +68,6 @@ function desencriptar(stringDesencriptada){
     }
     return stringDesencriptada
 }
-
 
 function copiar(){
     mensaje.select();
