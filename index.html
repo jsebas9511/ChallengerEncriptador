@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
     </head>
-
+    
     <body>
 
         <main>
@@ -20,10 +20,17 @@
             <div class="cuadros-texto">
                 <div>
                     <form>
-                        <textarea style="resize:none" cols="30" rows="15" class="input-padron" required placeholder="Ingrese el texto aqui"></textarea>
+                        <textarea style="resize:none" cols="40" rows="12" class="input_padron" required lowercase placeholder="Ingrese el texto aqui"></textarea>
                         <div>
-                            <input type="submit" value="Encriptar" class="enviar">
-                            <input type="submit" value="Desencriptar" class="enviar">
+                            <p> Solo ingresar letras en minusculas y sin acentos, revisa la tecla Bloq Mayús</p>
+
+                        </div>
+
+
+                        <div class="botones">
+                            
+                            <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                            <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
                         </div>
                         
                         
@@ -32,11 +39,11 @@
                     
                 </div>
                
-                <div> 
+                <div class="copiar"> 
                     <form>
-                        <textarea style="resize:none" cols="20" rows="15" class="input-padron" required></textarea>
+                        <textarea  style="resize:none" cols="30" rows="10" class="cuadro_salida" ></textarea>
                         <div>
-                            <input type="submit" value="Copiar" class="enviar">
+                            <button class="boton-copiar" onclick="copiar()">Copiar</button>
                         </div>
 
                     </form>             
@@ -51,6 +58,7 @@
         <footer>
             <p class="copyright">&copy Copyright Juan Sebastian Peña Mora - 2023</p>
         </footer>
+    <script src="/javascript.js"></script>
     </body>
 
 </html>

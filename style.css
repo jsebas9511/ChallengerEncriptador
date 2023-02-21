@@ -1,0 +1,178 @@
+body{
+    font-family: 'Sora', sans-serif;
+}
+.imagen_logo{
+    
+    padding: 2.5em 2.5em;
+
+}
+
+.cuadros-texto{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 0 1em 0;
+    background: linear-gradient(#FFFFFF,rgb(146, 215, 77),#FFFFFF );
+}
+.cuadros-texto p:before{
+    content:"\26A0 ";
+}
+.cuadros-texto p{
+    padding: 1em 0em 0em 0em;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.input_padron{
+    font-size: 2em;
+    background: none;
+    outline: none;
+    padding: 2em 2em;
+    border: none;
+    text-transform: lowercase;
+    box-shadow: 5px 5px 10px 5px #000000;
+    border-radius:20px;
+}
+
+.cuadro_salida{
+    background: none;
+    background-image: url(/imagenes/mensaje_guardado_pequeña.png);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: center;
+    padding: 2em 2em;
+    outline: none;
+    border: none;
+    text-transform: lowercase;
+    box-shadow: 5px 5px 10px 5px #000000;
+    border-radius:20px;
+    font-size: 2em;
+
+}
+
+
+
+.input_padron:focus{
+    background: none ;
+}
+
+
+
+.boton-encriptar{
+    display: inline-block;
+    width: 30%;
+    padding:8px 20px;
+    margin: 20px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #0d721c;
+    border: none;
+    border-radius: 20px;
+    transition: 0.8s all;
+    cursor: pointer;
+}
+.boton-encriptar:hover{
+    background-color:#80f70a;
+    transform: scale(1.1);
+}
+
+.boton-desencriptar{
+    display: inline-block;
+    width: 30%;
+    outline: 3px solid #80f70a;
+    padding:8px 20px;
+    margin: 20px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0d721c;
+    background:  none;
+    border: #80f70a;
+    border-radius: 20px;
+    transition: 0.8s all;
+    cursor: pointer;
+}
+.boton-desencriptar:hover{
+    background-color:#80f70a;
+    transform: scale(1.1);
+}
+
+
+.boton-copiar{
+    width: 150px;
+    padding:8px 20px;
+    margin: 20px 220px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d721c;
+    background:  none;
+    border: none;
+    border-radius: 20px;
+    transition: 0.8s all;
+    cursor: pointer;
+}
+.boton-copiar{
+    background-color:#80f70a;
+    transform: scale(1.1);
+}
+.boton-copiar:hover{
+    background-color:#FFFFFF;
+    transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background: url(imagenes/pie_de_pagina_naturaleza.jpg);
+    padding: 30px;
+}
+
+/* RESPONSIVE*/
+
+@media screen and (max-width:480px){
+    
+
+    .cuadros-texto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        background: linear-gradient(#FFFFFF,rgb(146, 215, 77),#FFFFFF );
+    }
+    .cuadro-salida{
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: center;
+    }
+    
+
+    .input-padron{
+        width: 50%;
+        height: 200px;
+        padding: 1em 1em;
+
+    }
+    .cuadro-salida{
+        width: 50%;
+        height: 200px;
+        padding: 1em 1em;
+    
+    }
+
+    .botones .boton-desencriptar , .boton-encriptar , .boton-copiar{
+        font-size: 12px;
+        width: 100px;
+        
+        
+    }
+    .boton-copiar{
+        width: 100px;
+        padding:8px 20px;
+        margin: 1.5em 0 0 0;
+    
+}
+
+}
