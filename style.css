@@ -37,7 +37,7 @@ body{
 
 .cuadro_salida{
     background: none;
-    background-image: url(/imagenes/mensaje_guardado_pequena.png);
+    background-image: url(./imagenes/mensaje_guardado_pequena.png);
     background-repeat: no-repeat;
     background-size: 400px 400px;
     background-position: center;
@@ -125,7 +125,7 @@ footer{
     text-align: center;
     font-size: 1.2em;
     color: #FFFFFF;
-    background: url(imagenes/pie_de_pagina_naturaleza.jpg);
+    background: url(./imagenes/pie_de_pagina_naturaleza.jpg);
     padding: 30px;
 }
 
