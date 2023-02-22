@@ -16,7 +16,7 @@ body{
     background: linear-gradient(#FFFFFF,rgb(146, 215, 77),#FFFFFF );
 }
 .cuadros-texto p:before{
-    content:"\26A0 ";
+    content: "\26A0 ";
 }
 .cuadros-texto p{
     padding: 1em 0em 0em 0em;
@@ -32,7 +32,7 @@ body{
     border: none;
     text-transform: lowercase;
     box-shadow: 5px 5px 10px 5px #000000;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
 .cuadro_salida{
@@ -62,7 +62,7 @@ body{
 .boton-encriptar{
     display: inline-block;
     width: 30%;
-    padding:8px 20px;
+    padding: 8px 20px;
     margin: 20px 50px;
     font-size: 20px;
     font-weight: bold;
@@ -74,7 +74,7 @@ body{
     cursor: pointer;
 }
 .boton-encriptar:hover{
-    background-color:#80f70a;
+    background-color: #80f70a;
     transform: scale(1.1);
 }
 
@@ -82,7 +82,7 @@ body{
     display: inline-block;
     width: 30%;
     outline: 3px solid #80f70a;
-    padding:8px 20px;
+    padding: 8px 20px;
     margin: 20px 50px;
     font-size: 20px;
     font-weight: bold;
@@ -94,14 +94,14 @@ body{
     cursor: pointer;
 }
 .boton-desencriptar:hover{
-    background-color:#80f70a;
+    background-color: #80f70a;
     transform: scale(1.1);
 }
 
 
 .boton-copiar{
     width: 150px;
-    padding:8px 20px;
+    padding: 8px 20px;
     margin: 20px 220px;
     font-size: 18px;
     font-weight: bold;
@@ -113,11 +113,11 @@ body{
     cursor: pointer;
 }
 .boton-copiar{
-    background-color:#80f70a;
+    background-color: #80f70a;
     transform: scale(1.1);
 }
 .boton-copiar:hover{
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     transform: scale(1.1);
 }
 
