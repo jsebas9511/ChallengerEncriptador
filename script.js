@@ -34,7 +34,7 @@ function botonEncriptar(){
 // El espacio " " es convertido en "ibai"
 
 function encriptar(stringEncriptada){
-    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"], [" ", "ibai"]];
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringEncriptada = stringEncriptada.toLowerCase();
 
     for(let i = 0; i < matrizCodigo.length; i++){
@@ -56,7 +56,7 @@ function botonDesencriptar(){
 }
 
 function desencriptar(stringDesencriptada){
-    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"], [" ", "ibai"]];
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringDesencriptada = stringDesencriptada.toLowerCase();
 
     for(let i = 0; i < matrizCodigo.length; i++){
